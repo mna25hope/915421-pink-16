@@ -71,3 +71,33 @@
   text-transform: uppercase;
   color: #d22856;
 }
+
+@media (min-width: @tablet-width) {
+  .photos-wrapper {
+    margin: 0 auto;
+    width: 660px;
+    display: flex;
+  }
+
+  .photos__list {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+  }
+
+  .photos__list {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
