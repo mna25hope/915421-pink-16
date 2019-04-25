@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="body-wrapper">
     <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="23" alt="логотип pink">
       </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item site-list__item--active">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">HTML ACADEMY</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <section class="app">
-            <div class="app__wrapper">
-              <h2 class="app__topic">Взгляните на мир иначе!</h2>
-              <img src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Фото рука с телефоном">
-              <a class="app__button" href="#">Скачать приложение</a>
-              <ul class="app__list">
-                <li class="app__item">
-                  <a class="app__icon app__icon--apple">Иконка apple</a>
-                </li>
-                <li class="app__item">
-                  <a class="app__icon app__icon--android">Иконка android</a>
-                </li>
-                <li class="app__item">
-                  <a class="app__icon app__icon--windows">Иконка windows</a>
-                </li>
-              </ul>
-              <span class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8 </span>
-            </div>
-        </section>
+      <nav class="main-nav">
+        <div class="main-nav__cap"><button class="main-nav__toggle" type="button">меню</button></div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="app">
+        <div class="app__wrapper">
+          <h2 class="app__topic">Взгляните на жизнь иначе!</h2>
+          <img class="app__photo" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Фото рука с телефоном">
+          <a class="app__button" href="#">Скачать приложение</a>
+          <ul class="app__list">
+            <li class="app__item">
+              <a class="app__icon app__icon--apple">Иконка apple</a>
+            </li>
+            <li class="app__item">
+              <a class="app__icon app__icon--android">Иконка android</a>
+            </li>
+            <li class="app__item">
+              <a class="app__icon app__icon--windows">Иконка windows</a>
+            </li>
+          </ul>
+          <span class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8 </span>
+        </div>
+      </section>
     </header>
     <main class="page-main">
       <section class="advantages">
         <div class="advantages__wrapper">
           <p class="advantages__intro">Устали от серости мегаполиса?</p>
-          <p class="advantages__what">Нам есть, что вам предложить!</p>
+          <p class="advantages__what">Нам есть, что вам<br> предложить!</p>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -68,9 +72,36 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото розовый смайлик">
         </div>
       </section>
+      <div class="effect">
+        <h3 class="effect__title">Эффект на 24 часа!</h3>
+        <p class="effect__discription">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="effect__button" href="research.html">Узнать больше об исследовании</a>
+      </div>
     </main>
-  </body>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="логотип pink в подвале">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">логотип академии</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>

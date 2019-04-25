@@ -1,12 +1,30 @@
 .page-header {
   margin: 0 auto;
   background: transparent;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .page-header__logo {
+  margin: 0 auto;
   background: pink;
-  width: 74px;
-  height: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/logotype-white-tablet-svg.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/logotype-white-desktop-svg.svg");
+  }
 }
 
 .page-header__topic {

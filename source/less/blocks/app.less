@@ -3,8 +3,17 @@
   background: transparent;
 }
 
-.app__topic{
+.app__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__topic {
   display: none;
+  width: 320px;
 }
 
 .app__button {
@@ -22,6 +31,13 @@
   padding-bottom: 17px;
 }
 
+.app__list{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .app__item {
   list-style: none;
 }
@@ -32,4 +48,43 @@
   line-height: 1.71;
   text-align: center;
   color: #ffffff;
+  background-color: @bg-darkgrey;
+}
+
+@media (min-width: @tablet-width) {
+  .app__wrapper{
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+    /*для сетки*/
+    min-height: 545px;
+  }
+
+  .app__topic{
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    width: 186px;
+    height: 126px;
+  }
+
+  .app__photo {
+    position: absolute;
+    right: 50px;
+  }
+
+  .app__list{
+    margin: 0;
+    padding: 0;
+  }
+  .app__description{
+    width: 294px;
+    height: 41px;
+  }
 }
