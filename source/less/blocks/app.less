@@ -1,11 +1,12 @@
 /* Временно для сетки */
 .app {
-  background: transparent;
+  background-color: transparent;
 }
 
 .app__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 0;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -14,32 +15,70 @@
 .app__topic {
   display: none;
   width: 320px;
+  background-color: transparent;
+}
+
+.app__photo {
+  margin-top: 109px;
+  background-color: transparent;
+}
+
+.app__pril {
+  display: flex;
+  width: 300px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin: 0 auto;
+  background-color: @bg-darkgrey;
 }
 
 .app__button {
-  width: 202px;
+  width: 205px;
   height: 18px;
+  margin: 0 auto;
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
   text-align: center;
   border: solid white 3px;
+  border-radius: 30px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
   padding-bottom: 17px;
+  background-color: @bg-darkgrey;
 }
 
 .app__list{
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  padding-bottom: 29px;
   padding: 0;
+  width: 280px;
+  padding: 20px;
+  justify-content: center;
+  background-color: @bg-darkgrey;
 }
 
 .app__item {
   list-style: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+.app__icon {
+
+}
+
+.app__icon--apple {
+  width: 47px;
+  height: 56px;
+
 }
 
 .app__description {
@@ -48,13 +87,14 @@
   line-height: 1.71;
   text-align: center;
   color: #ffffff;
+  padding-bottom: 29px;
   background-color: @bg-darkgrey;
 }
 
 @media (min-width: @tablet-width) {
   .app__wrapper{
     display: flex;
-    width: 660px;
+    width: 620px;
     margin: 0 auto;
     /*для сетки*/
     min-height: 545px;
@@ -72,6 +112,7 @@
     color: #ffffff;
     width: 186px;
     height: 126px;
+    margin-left: 78px;
   }
 
   .app__photo {
@@ -79,12 +120,65 @@
     right: 50px;
   }
 
+  .app__pril {
+    margin: 0;
+    margin-bottom: 51px;
+    background-color: transparent;
+  }
+
+  .app__button {
+    background-color: transparent;
+  }
+
   .app__list{
     margin: 0;
+    margin-bottom: 41px;
     padding: 0;
+    background-color: transparent;
   }
+
   .app__description{
     width: 294px;
     height: 41px;
+    background-color: transparent;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .app__wrapper{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .app__list{
+    margin: 0;
+    margin-bottom: 61px;
+    padding: 0;
+    background-color: pink;
+  }
+
+  .app__description{
+    margin: 0;
+    margin-bottom: 78px;
+    padding: 0;
+    background-color: orange;
+  }
+
+  .app__topic {
+    padding: 0;
+    margin-bottom: 61px;
+  }
+
+  .app__button {
+    width: 235px;
+    height: 21px;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding-left: 33px;
+    padding-right: 32px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+  }
+
 }
