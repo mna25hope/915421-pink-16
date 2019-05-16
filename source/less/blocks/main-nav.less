@@ -29,7 +29,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 19px;
+  top: 23px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -99,8 +99,8 @@
     justify-content: space-between;
     width: 620px;
     margin: 0 auto;
-    padding-top: 27px;
-    padding-bottom: 42px;
+    padding-top: 43px;
+    padding-bottom: 26px;
     padding-left: 20px;
   }
 
@@ -111,16 +111,20 @@
     background-repeat: no-repeat;
     background-position: center -9px;
   }
+
+  .main-nav__toggle {
+    top: 45px;
+    right: 8px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     flex-direction: row;
-    background-color: transparent;
-  }
-
-  .main-nav__cap {
-    width: 200px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: pink;
   }
 
   .main-nav__toggle {

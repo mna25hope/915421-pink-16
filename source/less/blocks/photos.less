@@ -5,6 +5,20 @@
   background-color: @bg-lightgrey;
 }
 
+.photos__title {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 11px;
+  margin-bottom: 49px;
+}
+
 .photos__list {
   list-style: none;
   padding: 0;
@@ -15,16 +29,11 @@
   background-color: @bg-lightgrey;
 }
 
-.photos__title {
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.14;
-  letter-spacing: normal;
-  text-align: center;
-  width: 241px;
+.photos__item {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .photos__day {
@@ -50,7 +59,15 @@
 }
 
 .photos__card {
-  position: relative;
+position: relative;
+}
+
+.photos__description{
+display: flex;
+flex-direction: column;
+width: 280px;
+margin-top: 50px;
+background-color: blue;
 }
 
 .photos__author-name {
@@ -60,6 +77,8 @@
   font-stretch: normal;
   line-height: 1.71;
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .photos__select {
@@ -75,6 +94,9 @@
   font-stretch: normal;
   line-height: 1.71;
   text-align: left;
+  padding: 0;
+  margin: 0;
+
 }
 
 .photos__number {

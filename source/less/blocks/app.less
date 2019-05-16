@@ -19,7 +19,7 @@
 }
 
 .app__photo {
-  margin-top: 109px;
+  margin-top: 115px;
   background-color: transparent;
 }
 
@@ -39,6 +39,7 @@
   width: 205px;
   height: 18px;
   margin: 0 auto;
+  margin-bottom: 5px;
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
@@ -46,9 +47,9 @@
   text-align: center;
   border: solid white 3px;
   border-radius: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 20px;
+  padding-left: 37px;
+  padding-right: 35px;
+  padding-top: 15px;
   padding-bottom: 17px;
   background-color: @bg-darkgrey;
 }
@@ -57,9 +58,9 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  padding-bottom: 29px;
-  padding: 0;
-  width: 280px;
+  padding-left: 0;
+  padding-bottom: 16px;
+  width: 320px;
   justify-content: center;
   background-color: @bg-darkgrey;
 }
@@ -67,12 +68,26 @@
 .app__item {
   list-style: none;
   display: flex;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .app__icon--apple {
   width: 47px;
-  height: 56px;
+  height: 60px;
+}
+
+.app__icon--android {
+  width: 43px;
+  height: 47px;
+  margin-left: 34px;
+  margin-right: 37px;
+}
+
+.app__icon--windows {
+  width: 44px;
+  height: 41px;
 }
 
 .app__description {
@@ -81,7 +96,7 @@
   line-height: 1.71;
   text-align: center;
   color: #ffffff;
-  padding-bottom: 29px;
+  padding-bottom: 31px;
   background-color: @bg-darkgrey;
 }
 
@@ -90,8 +105,7 @@
     display: flex;
     width: 620px;
     margin: 0 auto;
-    /*для сетки*/
-    min-height: 545px;
+    padding-bottom: 86px;
   }
 
   .app__topic{
@@ -100,13 +114,15 @@
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
     letter-spacing: normal;
+    line-height: 48px;
     text-align: center;
     color: #ffffff;
-    width: 186px;
+    width: 190px;
     height: 126px;
-    margin-left: 78px;
+    margin-left: 59px;
+    margin-top: 92px;
+    margin-bottom: 20px;
   }
 
   .app__photo {
@@ -116,23 +132,31 @@
 
   .app__pril {
     margin: 0;
-    margin-bottom: 51px;
+    margin-bottom: 18px;
     background-color: transparent;
   }
 
   .app__button {
     background-color: transparent;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 45px;
   }
 
   .app__list {
     margin: 0;
-    margin-bottom: 41px;
+    margin-bottom: 33px;
     padding: 0;
     background-color: transparent;
   }
 
   .app__description {
-    width: 294px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    width: 350px;
     height: 41px;
     background-color: transparent;
   }
@@ -160,8 +184,15 @@
   }
 
   .app__topic {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 60px;
     padding: 0;
-    margin-bottom: 61px;
+    margin-bottom: 78px;
+    margin-top: 108px;
+    margin-left: 63px;
+    width: 231px;
   }
 
   .app__button {
@@ -175,4 +206,15 @@
     padding-bottom: 16px;
   }
 
+  .app__pril {
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 33px;
+  }
+
+  .app__list {
+    margin-left: 20px;
+    padding: 0;
+    margin-bottom: 50px;
+  }
 }
